@@ -1,0 +1,563 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alan Austin | Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+</head>
+<body>
+    
+  
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <a href="#" class="nav-logo">
+                <span class="logo-text">Alan</span><span class="logo-accent">Austin</span>
+            </a>
+            
+            <div class="nav-menu" id="nav-menu">
+                <a href="#home" class="nav-link active" data-section="home">Home</a>
+                <a href="#about" class="nav-link" data-section="about">About</a>
+                <a href="#services" class="nav-link" data-section="services">Services</a>
+                <a href="#projects" class="nav-link" data-section="projects">Projects</a>
+                <a href="#contact" class="nav-link" data-section="contact">Contact</a>
+            </div>
+            
+            <div class="nav-toggle" id="nav-toggle">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-background" style="background-image: url('1000004144.jpg')"></div>
+        
+        <div class="hero-container">
+            <div class="hero-content">
+                <div class="hero-text">
+                    <div class="hero-greeting">
+                        <span class="greeting-text">Hello, I'm</span>
+                        <div class="wave">👋</div>
+                    </div>
+                    
+                    <h1 class="hero-title">
+                        <span class="title-name">Alan Austin</span>
+                        <span class="title-role">
+                            <span class="typed-text"></span>
+                            <span class="cursor"></span>
+                        </span>
+                    </h1>
+                    
+                    <p class="hero-description">
+                        A passionate Computer Science student from Bangladesh, specializing in web development, 
+                        competitive programming, and creative design. I craft digital experiences that inspire and engage.
+                    </p>
+                    
+                    <div class="hero-buttons">
+                        <a href="#contact" class="btn btn-primary">
+                            <span>Get In Touch</span>
+                            <i class="fas fa-arrow-right"></i>
+                        </a>
+                        <a href="#projects" class="btn btn-secondary">
+                            <span>View Projects</span>
+                            <i class="fas fa-eye"></i>
+                        </a>
+                    </div>
+                    
+                    <div class="hero-social">
+                        <a href="#" class="social-link" data-tooltip="Facebook">
+                            <i class="fab fa-facebook-f"></i>
+                        </a>
+                        <a href="#" class="social-link" data-tooltip="Instagram">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                        <a href="#" class="social-link" data-tooltip="Twitter">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                        <a href="#" class="social-link" data-tooltip="LinkedIn">
+                            <i class="fab fa-linkedin-in"></i>
+                        </a>
+                        <a href="#" class="social-link" data-tooltip="GitHub">
+                            <i class="fab fa-github"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="scroll-indicator">
+                <div class="scroll-text">Scroll Down</div>
+                <div class="scroll-arrow">
+                    <i class="fas fa-chevron-down"></i>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">About Me</h2>
+                <div class="section-line"></div>
+            </div>
+            
+            <div class="about-content">
+                <!-- Profile Image Column -->
+                <div class="about-profile">
+                    <div class="profile-image-container">
+                        <img src="1000004141.png" alt="Alan Austin" class="profile-image">
+                        <div class="image-decoration"></div>
+                    </div>
+                    
+                    <div class="stats-grid">
+                        <div class="stat-item">
+                            <div class="stat-number" data-count="50">0</div>
+                            <div class="stat-label">Projects</div>
+                        </div>
+                        <div class="stat-item">
+                            <div class="stat-number" data-count="3">0</div>
+                            <div class="stat-label">Years Experience</div>
+                        </div>
+                        <div class="stat-item">
+                            <div class="stat-number" data-count="100">0</div>
+                            <div class="stat-label">Problems Solved</div>
+                        </div>
+                        <div class="stat-item">
+                            <div class="stat-number" data-count="25">0</div>
+                            <div class="stat-label">Happy Clients</div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Text and Tabs Column -->
+                <div class="about-details">
+                    <div class="about-description">
+                        <p>
+                            Hi, I'm Alan Austin, a passionate Computer Science & Engineering (CSE) student with a strong drive for creativity and problem-solving. I specialize in web design and competitive coding, constantly exploring new technologies and sharpening my skills.
+                        </p>
+                        <p>
+                            Beyond the world of programming, I have a deep love for video and picture editing, photography, sketching, and playing the guitar. Whether it's crafting stunning visuals, designing sleek websites, or tackling complex coding challenges, I always aim for perfection.
+                        </p>
+                    </div>
+                    
+                    <div class="about-tabs">
+                        <div class="tab-buttons">
+                            <button class="tab-button active" data-tab="skills">
+                                <i class="fas fa-code"></i>
+                                <span>Skills</span>
+                            </button>
+                            <button class="tab-button" data-tab="experience">
+                                <i class="fas fa-briefcase"></i>
+                                <span>Experience</span>
+                            </button>
+                            <button class="tab-button" data-tab="education">
+                                <i class="fas fa-graduation-cap"></i>
+                                <span>Education</span>
+                            </button>
+                        </div>
+                        
+                        <div class="tab-content active" data-content="skills">
+                            <div class="skills-grid">
+                                <div class="skill-item">
+                                    <div class="skill-icon">
+                                        <i class="fab fa-html5"></i>
+                                    </div>
+                                    <div class="skill-info">
+                                        <h4>Web Development</h4>
+                                        <p>HTML, CSS, JavaScript, React</p>
+                                        <div class="skill-bar">
+                                            <div class="skill-progress" data-width="90%"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                                <div class="skill-item">
+                                    <div class="skill-icon">
+                                        <i class="fas fa-trophy"></i>
+                                    </div>
+                                    <div class="skill-info">
+                                        <h4>Competitive Programming</h4>
+                                        <p>C++, Data Structures, Algorithms</p>
+                                        <div class="skill-bar">
+                                            <div class="skill-progress" data-width="85%"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                                <div class="skill-item">
+                                    <div class="skill-icon">
+                                        <i class="fas fa-camera"></i>
+                                    </div>
+                                    <div class="skill-info">
+                                        <h4>Creative Design</h4>
+                                        <p>Photography, Video Editing, UI/UX</p>
+                                        <div class="skill-bar">
+                                            <div class="skill-progress" data-width="80%"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="tab-content" data-content="experience">
+                            <div class="timeline">
+                                <div class="timeline-item">
+                                    <div class="timeline-dot"></div>
+                                    <div class="timeline-content">
+                                        <span class="timeline-date">2024 - Present</span>
+                                        <h4>Freelance Web Developer</h4>
+                                        <p>Building modern, responsive websites for clients worldwide</p>
+                                    </div>
+                                </div>
+                                
+                                <div class="timeline-item">
+                                    <div class="timeline-dot"></div>
+                                    <div class="timeline-content">
+                                        <span class="timeline-date">2023 - 2024</span>
+                                        <h4>Web Design Intern</h4>
+                                        <p>CreativeTech Solutions - Gained hands-on experience in UI/UX design</p>
+                                    </div>
+                                </div>
+                                
+                                <div class="timeline-item">
+                                    <div class="timeline-dot"></div>
+                                    <div class="timeline-content">
+                                        <span class="timeline-date">2022 - 2023</span>
+                                        <h4>Student Mentor</h4>
+                                        <p>University Coding Club - Mentored junior students in programming</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="tab-content" data-content="education">
+                            <div class="timeline">
+                                <div class="timeline-item">
+                                    <div class="timeline-dot"></div>
+                                    <div class="timeline-content">
+                                        <span class="timeline-date">2021 - Present</span>
+                                        <h4>Bachelor in CSE</h4>
+                                        <p>University of Global Village - Computer Science & Engineering</p>
+                                    </div>
+                                </div>
+                                
+                                <div class="timeline-item">
+                                    <div class="timeline-dot"></div>
+                                    <div class="timeline-content">
+                                        <span class="timeline-date">2019 - 2021</span>
+                                        <h4>Higher Secondary Certificate</h4>
+                                        <p>Excellence College - Science Background</p>
+                                    </div>
+                                </div>
+                                
+                                <div class="timeline-item">
+                                    <div class="timeline-dot"></div>
+                                    <div class="timeline-content">
+                                        <span class="timeline-date">2017 - 2019</span>
+                                        <h4>Secondary School Certificate</h4>
+                                        <p>Sunshine Academy - Science Group</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="services">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-subtitle">What I Do</span>
+                <h2 class="section-title">Services</h2>
+                <div class="section-line"></div>
+            </div>
+            
+            <div class="services-grid">
+                <div class="service-card" data-tilt>
+                    <div class="service-icon">
+                        <i class="fas fa-code"></i>
+                        <div class="icon-bg"></div>
+                    </div>
+                    <h3>Web Development</h3>
+                    <p>Custom, responsive website development with modern technologies. I create intuitive interfaces that engage your audience.</p>
+                    <div class="service-features">
+                        <span class="feature">Responsive Design</span>
+                        <span class="feature">Modern Framework</span>
+                        <span class="feature">SEO Optimized</span>
+                    </div>
+                    <a href="webdevelopment.html" class="service-link">
+                        <span>Learn More</span>
+                        <i class="fas fa-arrow-right"></i>
+                    </a>
+                </div>
+                
+                <div class="service-card" data-tilt>
+                    <div class="service-icon">
+                        <i class="fas fa-video"></i>
+                        <div class="icon-bg"></div>
+                    </div>
+                    <h3>Video Editing</h3>
+                    <p>Professional video editing services including color grading, transitions, effects, and sound synchronization.</p>
+                    <div class="service-features">
+                        <span class="feature">Color Grading</span>
+                        <span class="feature">Motion Graphics</span>
+                        <span class="feature">Sound Design</span>
+                    </div>
+                    <a href="videoediting.html" class="service-link">
+                        <span>Learn More</span>
+                        <i class="fas fa-arrow-right"></i>
+                    </a>
+                </div>
+                
+                <div class="service-card" data-tilt>
+                    <div class="service-icon">
+                        <i class="fas fa-music"></i>
+                        <div class="icon-bg"></div>
+                    </div>
+                    <h3>Sound Mastering</h3>
+                    <p>Audio enhancement, mixing, and mastering services to perfect your sound and optimize for different platforms.</p>
+                    <div class="service-features">
+                        <span class="feature">Audio Mixing</span>
+                        <span class="feature">Noise Reduction</span>
+                        <span class="feature">Quality Enhancement</span>
+                    </div>
+                    <a href="soundmastering.html" class="service-link">
+                        <span>Learn More</span>
+                        <i class="fas fa-arrow-right"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="projects">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-subtitle">My Work</span>
+                <h2 class="section-title">Featured Projects</h2>
+                <div class="section-line"></div>
+            </div>
+            
+            <div class="projects-grid">
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="Screenshot 2025-02-07 201350.png" alt="E-Commerce Website">
+                        <div class="project-overlay">
+                            <div class="project-actions">
+                                <a href="#" class="project-btn" data-tooltip="Live Demo">
+                                    <i class="fas fa-external-link-alt"></i>
+                                </a>
+                                <a href="#" class="project-btn" data-tooltip="View Code">
+                                    <i class="fab fa-github"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="project-info">
+                        <div class="project-tags">
+                            <span class="project-tag">HTML/CSS</span>
+                            <span class="project-tag">JavaScript</span>
+                            <span class="project-tag">PHP</span>
+                        </div>
+                        <h3>E-Commerce Website</h3>
+                        <p>A fully responsive e-commerce platform with secure payment integration, user accounts, and dynamic product catalog management.</p>
+                    </div>
+                </div>
+                
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="Screenshot 2025-02-11 195512.png" alt="Class Cloud">
+                        <div class="project-overlay">
+                            <div class="project-actions">
+                                <a href="#" class="project-btn" data-tooltip="Live Demo">
+                                    <i class="fas fa-external-link-alt"></i>
+                                </a>
+                                <a href="#" class="project-btn" data-tooltip="View Code">
+                                    <i class="fab fa-github"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="project-info">
+                        <div class="project-tags">
+                            <span class="project-tag">React</span>
+                            <span class="project-tag">Node.js</span>
+                            <span class="project-tag">MongoDB</span>
+                        </div>
+                        <h3>Class Cloud</h3>
+                        <p>An educational platform that connects students and teachers through virtual classrooms with real-time interaction capabilities.</p>
+                    </div>
+                </div>
+                
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="Screenshot 2025-02-11 195710.png" alt="Personal Portfolio">
+                        <div class="project-overlay">
+                            <div class="project-actions">
+                                <a href="#" class="project-btn" data-tooltip="Live Demo">
+                                    <i class="fas fa-external-link-alt"></i>
+                                </a>
+                                <a href="#" class="project-btn" data-tooltip="View Code">
+                                    <i class="fab fa-github"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="project-info">
+                        <div class="project-tags">
+                            <span class="project-tag">HTML/CSS</span>
+                            <span class="project-tag">JavaScript</span>
+                            <span class="project-tag">UI/UX</span>
+                        </div>
+                        <h3>Personal Portfolio</h3>
+                        <p>A modern, responsive portfolio website showcasing skills, projects, and services with smooth animations and intuitive navigation.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-subtitle">Get In Touch</span>
+                <h2 class="section-title">Contact Me</h2>
+                <div class="section-line"></div>
+            </div>
+            
+            <div class="contact-content">
+                <div class="contact-info">
+                    <div class="contact-card">
+                        <div class="contact-icon">
+                            <i class="fas fa-map-marker-alt"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h4>Location</h4>
+                            <p>Barishal, Bangladesh</p>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-card">
+                        <div class="contact-icon">
+                            <i class="fas fa-envelope"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h4>Email</h4>
+                            <p>austinalan666@gmail.com</p>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-card">
+                        <div class="contact-icon">
+                            <i class="fas fa-phone"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h4>Phone</h4>
+                            <p>+8801732915198</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="contact-form-container">
+                    <form id="contact-form" class="contact-form">
+                        <div class="form-group">
+                            <input type="text" id="name" name="name" required>
+                            <label for="name">Your Name</label>
+                            <div class="form-line"></div>
+                        </div>
+                        
+                        <div class="form-group">
+                            <input type="email" id="email" name="email" required>
+                            <label for="email">Your Email</label>
+                            <div class="form-line"></div>
+                        </div>
+                        
+                        <div class="form-group">
+                            <input type="text" id="subject" name="subject" required>
+                            <label for="subject">Subject</label>
+                            <div class="form-line"></div>
+                        </div>
+                        
+                        <div class="form-group">
+                            <textarea id="message" name="message" rows="6" required></textarea>
+                            <label for="message">Your Message</label>
+                            <div class="form-line"></div>
+                        </div>
+                        
+                        <button type="submit" class="submit-btn">
+                            <span class="btn-text">Send Message</span>
+                            <span class="btn-loader"></span>
+                            <i class="fas fa-paper-plane"></i>
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <span class="logo-text">Alan</span><span class="logo-accent">Austin</span>
+                </div>
+                
+                <div class="footer-links">
+                    <a href="#home">Home</a>
+                    <a href="#about">About</a>
+                    <a href="#services">Services</a>
+                    <a href="#projects">Projects</a>
+                    <a href="#contact">Contact</a>
+                </div>
+                
+                <div class="footer-social">
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                    <a href="#"><i class="fab fa-github"></i></a>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2025 Alan Austin. All rights reserved. Made with ❤️ in Bangladesh</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Back to Top -->
+    <div class="back-to-top" id="back-to-top">
+        <i class="fas fa-chevron-up"></i>
+    </div>
+
+    <!-- Success Modal -->
+    <div id="success-modal" class="modal">
+        <div class="modal-content">
+            <div class="modal-icon">
+                <i class="fas fa-check-circle"></i>
+            </div>
+            <h3>Message Sent!</h3>
+            <p>Thank you for your message. I'll get back to you soon!</p>
+            <button class="modal-btn" onclick="closeModal()">Close</button>
+        </div>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/vanilla-tilt/1.7.0/vanilla-tilt.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
