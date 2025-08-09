@@ -303,9 +303,11 @@ section {
     position: relative;
     display: flex;
     align-items: center;
+    justify-content: center; /* Center content vertically and horizontally */
     color: white;
     overflow: hidden;
-    padding-top: 70px;
+    padding: 70px 2rem 2rem; /* Adjusted padding */
+    text-align: center; /* Center text by default */
 }
 
 .hero-background {
@@ -326,15 +328,19 @@ section {
     z-index: 2;
     width: 100%;
     max-width: 1200px;
-   margin-top: 0%;
-    margin-bottom: 0%;
-    margin-left: 50%;
-    margin-right: 0%;
-    padding: 0 2rem;
+    margin: 0 auto; /* Center the container */
+    padding: 0 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Center content horizontally */
 }
 
 .hero-content {
+    width: 100%;
     max-width: 800px;
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Center all content */
 }
 
 .hero-greeting {
@@ -342,12 +348,13 @@ section {
     align-items: center;
     gap: 0.5rem;
     margin-bottom: 1rem;
-    font-size: var(--font-size-xl);
+    font-size: clamp(1rem, 3vw, var(--font-size-xl));
     font-weight: 500;
 }
 
 .wave {
     animation: wave 2s infinite;
+    font-size: clamp(1rem, 3vw, 1.5rem);
 }
 
 @keyframes wave {
@@ -357,9 +364,10 @@ section {
 }
 
 .hero-title {
-    font-size: clamp(2.5rem, 5vw, 4rem);
+    font-size: clamp(2rem, 8vw, 4rem);
     margin-bottom: 1.5rem;
     line-height: 1.2;
+    width: 100%;
 }
 
 .title-name {
@@ -371,6 +379,8 @@ section {
     display: block;
     font-weight: 600;
     color: rgba(255, 255, 255, 0.9);
+    font-size: clamp(1.5rem, 5vw, 2.5rem);
+    margin-top: 0.5rem;
 }
 
 .typed-text {
@@ -392,27 +402,33 @@ section {
 }
 
 .hero-description {
-    font-size: var(--font-size-lg);
+    font-size: clamp(1rem, 3vw, var(--font-size-lg));
     margin-bottom: 2rem;
     max-width: 600px;
     opacity: 0.9;
     line-height: 1.7;
+    width: 100%;
 }
 
 .hero-buttons {
     display: flex;
+    flex-wrap: wrap; /* Allow buttons to wrap on small screens */
     gap: 1rem;
     margin-bottom: 3rem;
+    justify-content: center;
+    width: 100%;
 }
 
 .hero-social {
     display: flex;
     gap: 1rem;
+    flex-wrap: wrap;
+    justify-content: center;
 }
 
 .social-link {
-    width: 40px;
-    height: 40px;
+    width: clamp(36px, 8vw, 40px);
+    height: clamp(36px, 8vw, 40px);
     border-radius: 50%;
     background: rgba(255, 255, 255, 0.1);
     display: flex;
@@ -421,6 +437,7 @@ section {
     color: white;
     transition: all var(--transition-normal);
     position: relative;
+    font-size: clamp(0.8rem, 3vw, 1rem);
 }
 
 .social-link:hover {
@@ -464,7 +481,7 @@ section {
 }
 
 .scroll-text {
-    font-size: var(--font-size-sm);
+    font-size: clamp(0.75rem, 2vw, var(--font-size-sm));
     margin-bottom: 0.5rem;
 }
 
@@ -474,6 +491,43 @@ section {
     60% { transform: translateY(-5px) translateX(-50%); }
 }
 
+/* Responsive adjustments */
+@media (min-width: 768px) {
+    .hero {
+        text-align: left; /* Left align on larger screens */
+        padding: 70px 2rem;
+    }
+
+    .hero-container {
+        align-items: flex-start; /* Align left on larger screens */
+    }
+
+    .hero-content {
+        align-items: flex-start; /* Align left on larger screens */
+    }
+
+    .hero-buttons {
+        justify-content: flex-start; /* Align left on larger screens */
+    }
+
+    .hero-social {
+        justify-content: flex-start; /* Align left on larger screens */
+    }
+}
+
+@media (max-width: 480px) {
+    .hero-buttons {
+        flex-direction: column; /* Stack buttons vertically on small screens */
+    }
+
+    .hero-buttons .btn {
+        width: 100%; /* Full width buttons on small screens */
+    }
+
+    .hero {
+        padding: 70px 1rem 2rem; /* Reduced side padding on small screens */
+    }
+}
 /* About Section */
 .about-content {
     display: grid;
@@ -1943,3 +1997,4 @@ audio {
     to { opacity: 1; transform: translateY(0); }
 
 }
+
