@@ -299,6 +299,7 @@ section {
 
 /* Hero Section */
 .hero {
+ 
     min-height: 100vh;
     position: relative;
     display: flex;
@@ -309,38 +310,81 @@ section {
     padding: 70px 2rem 2rem; /* Adjusted padding */
     text-align: center; /* Center text by default */
 }
-
 .hero-background {
     position: absolute;
     top: 0;
     left: 0;
     width: 100%;
-    height: 100%;
+
+    /* Scale according to screen height */
+    min-height: 100vh; 
+
+    /* Keep the background image's aspect ratio intact */
     background-size: cover;
     background-position: center;
-    z-index: 1;
-    background-color: rgba(15, 23, 42, 0.7);
+    background-repeat: no-repeat;
+
+    /* Overlay color */
+    background-color: rgba(0, 0, 0, 0.7);
     background-blend-mode: overlay;
+
+    z-index: 1;
 }
 
+/* Tablet & below */
+@media (max-width: 1024px) {
+    .hero-background {
+        min-height: 90vh; /* slightly less tall for tablets */
+    }
+}
+
+/* Mobile phones */
+@media (max-width: 768px) {
+    .hero-background {
+        min-height: 80vh; /* adjust for smaller screens */
+    }
+}
+
+/* Small phones */
+@media (max-width: 480px) {
+    .hero-background {
+        min-height: 70vh; /* adjust for tiny screens */
+    }
+}
 .hero-container {
     position: relative;
     z-index: 2;
     width: 100%;
     max-width: 1200px;
-    margin: 0 auto; /* Center the container */
-    padding: 0 1rem;
+    margin: 0 auto;
+    padding: 2rem 1rem;
     display: flex;
     flex-direction: column;
-    align-items: center; /* Center content horizontally */
+    align-items: flex-end; /* Default for large screens */
+    text-align: left;
+    color: white;
 }
+
+/* For smaller screens */
+@media (max-width: 768px) {
+    .hero-container {
+        align-items: center; /* Center horizontally */
+        text-align: center;
+    }
+}
+
+
+
+
+
+
 
 .hero-content {
     width: 100%;
     max-width: 800px;
     display: flex;
     flex-direction: column;
-    align-items: center; /* Center all content */
+    align-items: left; /* Center all content */
 }
 
 .hero-greeting {
@@ -408,6 +452,7 @@ section {
     opacity: 0.9;
     line-height: 1.7;
     width: 100%;
+    color: #9a979f;
 }
 
 .hero-buttons {
@@ -438,6 +483,7 @@ section {
     transition: all var(--transition-normal);
     position: relative;
     font-size: clamp(0.8rem, 3vw, 1rem);
+    color: #6366f1;
 }
 
 .social-link:hover {
@@ -528,6 +574,7 @@ section {
         padding: 70px 1rem 2rem; /* Reduced side padding on small screens */
     }
 }
+
 /* About Section */
 .about-content {
     display: grid;
@@ -587,7 +634,7 @@ section {
 .stat-item {
     text-align: center;
     padding: 1.5rem;
-    background: white;
+    background: rgb(227, 227, 227);
     border-radius: var(--border-radius-lg);
     box-shadow: var(--shadow);
 }
@@ -618,7 +665,7 @@ section {
 }
 
 .about-tabs {
-    background: white;
+    background: rgb(227, 225, 225);
     border-radius: var(--border-radius-xl);
     box-shadow: var(--shadow);
     overflow: hidden;
@@ -1995,6 +2042,4 @@ audio {
 @keyframes fadeIn {
     from { opacity: 0; transform: translateY(20px); }
     to { opacity: 1; transform: translateY(0); }
-
 }
-
