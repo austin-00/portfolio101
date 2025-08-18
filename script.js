@@ -1,14 +1,4 @@
 document.addEventListener('DOMContentLoaded', function() {
-    // Loading screen
-    const loader = document.querySelector('.loader');
-    
-    // Hide loader after page loads
-    window.addEventListener('load', function() {
-        setTimeout(function() {
-            loader.classList.add('hidden');
-        }, 1000);
-    });
-    
     // Navbar scroll effect
     const navbar = document.getElementById('navbar');
     window.addEventListener('scroll', function() {
